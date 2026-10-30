@@ -13,7 +13,7 @@
 'use strict';
 // IMPORTANT: Set your real WhatsApp Business number here, country code included, digits only.
 // Example format for an Australian mobile: 614XXXXXXXX (do not include + or spaces).
-const WHATSAPP_NUMBER = '';
+const WHATSAPP_NUMBER = '61411885989';
 const products=[{id:'flyer',name:'Individual promotional flyer',price:29},{id:'setup',name:'WhatsApp Business setup',price:99},{id:'audit',name:'Business presence audit',price:49},{id:'pack5',name:'5-flyer pack',price:129},{id:'monthly',name:'10-post monthly content pack',price:199},{id:'group',name:'Growth group interest list',price:0}];
 const selected=new Set();const $=id=>document.getElementById(id);const money=n=>'$'+n.toLocaleString('en-AU');
 $('options').innerHTML=products.map(p=>`<label class="option"><input type="checkbox" data-id="${p.id}"><span class="option-main"><strong>${p.name}</strong><small>${p.id==='group'?'Register your interest, no commitment':'Add to your WhatsApp enquiry'}</small></span><span class="option-price">${p.price?money(p.price):'Waitlist'}</span></label>`).join('');
